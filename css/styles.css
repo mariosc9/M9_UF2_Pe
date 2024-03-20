@@ -8,6 +8,7 @@
 footer{
   margin-top: 200px;
 }
+
 .marquee__content {
   display: flex;
   animation: scrolling 10s linear infinite;
@@ -15,6 +16,7 @@ footer{
 
 .marquee__item {
   flex-shrink: 0;
+  margin-left: 20px;
 }
 
 @keyframes scrolling {
