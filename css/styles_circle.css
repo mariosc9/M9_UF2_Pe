@@ -1,0 +1,26 @@
+.app {
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.img1 {
+  width: 300px;
+  height: 325px;
+  border-radius: 50%;
+  animation-name: girarb;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  display: inline-block;
+}
+
+@keyframes girarb {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
