@@ -1,9 +1,10 @@
 window.onload = function () {
-
-  let submitBtn = document.querySelector('.submitAudio');
-  submitBtn.addEventListener('click', function(){
-    let myAudio = document.querySelector('#audio');
-    myAudio.play()
-  })
-  
+  let submitBtns = document.querySelectorAll('.submitAudio');
+  submitBtns.forEach(function(btn) {
+    btn.addEventListener('click', function(event){
+      event.preventDefault();
+      let myAudio = document.querySelector('#audio');
+      myAudio.play();
+    });
+  });
 }
